@@ -1,0 +1,6 @@
+services:
+  autovalidate_payed:
+    class: '\Drupal\autovalidate_payed\EventSubscriber\AutovalidatePayed'
+    arguments: ['@entity.query']
+    tags:
+      - { name: 'event_subscriber' }

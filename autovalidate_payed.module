@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains autovalidate_payed.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function autovalidate_payed_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the autovalidate_payed module.
+    case 'help.page.autovalidate_payed':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Automatically validates an order when payments amount is above or equal the order total amount.') . '</p>';
+      // TEST
+      /*$order = \Drupal\commerce_order\Entity\Order::load(73);
+      kint($order);
+      kint($order->getState()->getWorkflow());
+      $transition = $order->getState()->getWorkflow()->getTransition('validate');
+      kint($transition);
+      $order->getState()->applyTransition($transition);
+      $order->save();
+      kint($order);*/
+      return $output;
+
+    default:
+  }
+}
+
+function autovalidate_payed_commerce_order_update($entity){
+}

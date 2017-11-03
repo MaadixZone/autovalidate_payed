@@ -1,0 +1,1 @@
+If by default all orders are setted to validate when ordered, this module will set state of order to payed upon the total amount is payed summing all payments done. It will check everytime a payment occurs or order is saved.

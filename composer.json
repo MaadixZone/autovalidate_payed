@@ -1,0 +1,14 @@
+{
+  "name": "drupal/autovalidate_payed",
+  "type": "drupal-module",
+  "description": "Automatically validates an order when payments amount is above or equal the order total amount.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/autovalidate_payed",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/autovalidate_payed",
+    "source": "http://cgit.drupalcode.org/autovalidate_payed"
+  },
+  "require": { }
+}
